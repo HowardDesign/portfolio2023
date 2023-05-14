@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>洪榮豪 - 介面設計作品</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="js/modernizr.custom.js"></script>
+
+    <!-- 3d slider
+    <link rel="stylesheet" href="carrousel.css" /> 
+    -->
+    <!-- slider
+    <link href="_css/responsive-layered-slider.css" rel="stylesheet" type="text/css" /> 
+    -->
+    <!-- 圖片show -->
+    <link rel="stylesheet" href="css/chromagallery.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header" class="codrops-header">
+            <h1>Design Portfolio</h1>
+            <span class="message">This mobile version does not have the slideshow switch</span>
+            <button class="slider-switch">Switch view</button>
+        </header>
+        <div id="overlay" class="overlay">
+            <div class="info">
+                <h2>操作說明</h2>
+                <span class="info-drag">可拖移縮略圖</span>
+                <span class="info-keys">可以使用方向鍵</span>
+                <span class="info-switch">切換視圖</span>
+                <button>開始體驗吧!</button>
+            </div>
+        </div>
+        <div id="slideshow" class="dragslider">
+            <!-- banner -->
+            <section class="img-dragger img-dragger-large dragdealer">
+                <div class="handle">
+                    <div class="slide" data-content="content-1">
+                        <div class="img-wrap"><img src="001.jpg" alt="img1" /></div>
+                        <h2>02.2020<span>越南網站 / PSD. HTML. CSS. JQuery</span><a href="https://www.luckygame666.com/" target="_blank">網站連結</a></h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-2">
+                        <div class="img-wrap"><img src="002.jpg" alt="img2" /></div>
+                        <h2>03.2020 <span>learn up 教學平台 / UI</span><a href="https://www.learnup.com.tw/" target="_blank">網站連結</a></h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-3">
+                        <div class="img-wrap"><img src="003.jpg" alt="img3" /></div>
+                        <h2>09.2021 <span>EIP Design / UX flow</span><a href="https://xd.adobe.com/view/cd6299d2-b1cc-4994-ad10-8d2cd1233cd3-9831/" target="_blank">網站連結</a></h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-4">
+                        <div class="img-wrap"><img src="004.jpg" alt="img4" /></div>
+                        <h2>10.2021 <span>影音串流平台 / UX.UI</span><a href="http://104.199.202.52:8081/" target="_blank">網站連結</a></h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-5">
+                        <div class="img-wrap"><img src="images/501/101.jpg" alt="img5" /></div>
+                        <h2>2021 <span>星城支援 / Graphic</span></h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Content section -->
+            <section class="pages">
+                <div class="content" data-content="content-1">
+                    <h2>越南網站<span>越南地區遊戲說明平台</span></h2>
+                    <!-- <article class="htmleaf-container">
+                            <div class="banner">
+                                <section id="dg-container" class="dg-container">
+                                    <div class="dg-wrapper">
+                                        <a href="#" link=""><img src="images/101/index.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/1-1.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/1-1-2.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/1-2.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/1-3.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/1-3-2.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/2-1.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/2-2.jpg"></a>
+                                        <a href="#" link=""><img src="images/101/2-3.jpg"></a>
+                                    </div>
+                                    <ol class="button" id="lightButton">
+                                        <li index="0"></li>
+                                        <li index="1"></li>
+                                        <li index="2"></li>
+                                        <li index="3"></li>
+                                        <li index="4"></li>
+                                        <li index="5"></li>
+                                        <li index="6"></li>
+                                        <li index="7"></li>
+                                        <li index="8"></li>
+                                    </ol>
+                                    <nav>
+                                        <span class="dg-prev"></span>
+                                        <span class="dg-next"></span>
+                                    </nav>
+                                </section>
+                            </div>
+                        </article> -->
+                    <div class="chroma-gallery mygallery">
+                        <img src="images/101/index.jpg" alt="首頁" data-largesrc="">
+                        <img src="images/101/1-1.jpg" alt="遊戲列表" data-largesrc="">
+                        <img src="images/101/1-1-2.jpg" alt="遊戲介紹" data-largesrc="">
+                        <img src="images/101/1-2.jpg" alt="規則說明" data-largesrc="">
+                        <img src="images/101/1-3.jpg" alt="道具卡介紹" data-largesrc="">
+                        <img src="images/101/1-3-2.jpg" alt="道具卡詳細資訊" data-largesrc="">
+                        <img src="images/101/2-1.jpg" alt="遊戲指南-充值" data-largesrc="">
+                        <img src="images/101/2-2.jpg" alt="積分兌換說明" data-largesrc="">
+                        <img src="images/101/2-3.jpg" alt="加入公會" data-largesrc="">
+                        <img src="images/101/3-1.jpg" alt="客戶服務中心" data-largesrc="">
+                        <img src="images/101/3-2.jpg" alt="帳戶名單" data-largesrc="">
+                        <img src="images/101/4-1.jpg" alt="會員資訊" data-largesrc="">
+                        <img src="images/101/4-2.jpg" alt="會員資訊" data-largesrc="">
+                        <img src="images/101/4-3.jpg" alt="會員資訊" data-largesrc="">
+                        <img src="images/101/4-4.jpg" alt="會員資訊" data-largesrc="">
+                        <img src="images/101/4-4-2.jpg" alt="會員資訊" data-largesrc="">
+                        <img src="images/101/5-1.jpg" alt="隱私政策" data-largesrc="">
+                        <img src="images/101/5-2.jpg" alt="經營方針" data-largesrc="">
+                        <img src="images/101/5-3.jpg" alt="同意使用個人數據" data-largesrc="">
+                    </div>
+                    <!-- <div class="txt">
+                        <p>It was not child's play tackling those horses. Some of the kind-hearted station folk in the backblocks had sent down some wild warrigals of the West; bucking brumbies that beat the band; old outlaws off the grass that the station
+                            hands could never master. But Colonel Cox ("Fighting Charlie" we called him) had in his command some of the crack rough-riders of Australia. And it was a joy to see these men tackle the outlaws. There were Crouch of Wagga,
+                            McDonald of Barrington, Whiteley of Wellington, Bullock of Melbourne, Sievewright of Gunnedah, Kennedy of Gloucester, Rex Moffatt of Goulburn, Harry Heath of Moree, and a score of others. Nearly every man in the regiment could
+                            sit a buck, or puff nonchalantly at his pipe while his mount pigrooted merrily. So when the wild horses were led forth there were hundreds volunteering for the honour of riding the rebels. One after another the horses were
+                            saddled up, and while the regiment cheered itself hoarse, there was enacted again and again the old-time struggle for mastery. There were plunging and reefing and rooting and sidling and rearing and bucking, as the panting
+                            chargers swung this way and that in vain endeavour to dislodge the riders. But the bush boys stuck to the saddles as the Old Man of the Sea stuck to Sindbad the Sailor, and one after another the bucking brumbies were broken
+                            and led away.</p>
+                        <p>It was night when we got back to camp. Oh, those Egyptian nights! The winter cold has gone, and spring is in the air. The nights are fine and fair, clear and cloudless, with the moon pure silver. The reflections in the Nile are
+                            just wonderful. The huge date palms stand out sharply from a star-spangled sky that somehow has a tint of green in its blue. One thinks of the Arabian Nights. The very street scenes make one think of them. Motors glide up and
+                            down the streets with rich Syrians, Greeks, Egyptians, Italians, Frenchmen and Englishmen, going to the Continental, or to Shepheard's, or to private entertainments. It is a gorgeous splash of colour. They had no motor-cars
+                            that I remember in those old Arabian Nights, but the magic of the thing and the colour of it all were surely much the same. And the roads of Egypt—how beautiful they are!—clean and smooth as a billiard table. Are there any
+                            finer roads in the whole world than the Mena road and that to Heliopolis? Fifty miles an hour is easy. I sometimes shudder now when I recall the races that we used to have along those roads at night, crying "Egre! Egre!"—Faster!
+                            Faster!
+                        </p>
+                    </div> -->
+                </div>
+                <div class="content" data-content="content-2">
+                    <h2>learn up 教學平台<span>線上影音教學、互動</span></h2>
+                    <div class="chroma-gallery mygallery">
+                        <img src="images/201/index.jpg" alt="線上首頁" data-largesrc="images/201/index.jpg">
+                        <img src="images/201/index1.jpg" alt="版型一" data-largesrc="images/201/index1.jpg">
+                        <img src="images/201/index2.jpg" alt="版型二" data-largesrc="images/201/index2.jpg">
+                        <img src="images/201/index3.jpg" alt="暗色版-首頁-圖一" data-largesrc="images/201/index3.jpg">
+                        <img src="images/201/index3-2.jpg" alt="暗色版-首頁-圖二" data-largesrc="images/201/index3-2.jpg">
+                        <img src="images/201/index3_1_cart.jpg" alt="購物車列表" data-largesrc="images/201/index3_1_cart.jpg">
+                        <img src="images/201/index3_1_login.jpg" alt="會員設定列表" data-largesrc="images/201/index3_1_login.jpg">
+                        <img src="images/201/index3_1_menu.jpg" alt="選單樣式" data-largesrc="images/201/index3_1_menu.jpg">
+                        <img src="images/201/index3_1_message.jpg" alt="訊息列視窗" data-largesrc="images/201/index3_1_message.jpg">
+                        <img src="images/201/index3_1_point.jpg" alt="簽到給點數" data-largesrc="images/201/index3_1_point.jpg">
+                        <img src="images/201/index3_1_search.jpg" alt="搜尋列展開" data-largesrc="images/201/index3_1_search.jpg">
+                        <img src="images/201/index3_2_login.jpg" alt="登入視窗" data-largesrc="images/201/index3_2_login.jpg">
+                        <img src="images/201/index3_2_mobile.jpg" alt="手機驗證" data-largesrc="images/201/index3_2_mobile.jpg">
+                        <img src="images/201/index3_2_mobile2.jpg" alt="驗證碼錯誤警示" data-largesrc="images/201/index3_2_mobile2.jpg">
+                        <!-- <div class="sim-slider" data-width="2550" data-height="1440" data-animation="250" data-current="true" data-progress="true">
+                            <div class="sim-slider-inner">
+                                <div class="sim-slider-slide">
+                                    <div class="sim-slider-layer" data-effect="fadeInDown" data-width="1050" data-height="170" data-left="750" data-top="100">
+                                        <h6>文字內容</h6>
+                                    </div>
+                                    <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="600" data-height="781" data-left="100" data-top="300"><img src="images/101/1-1.jpg"></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="500" data-height="651" data-left="750" data-top="500"><img src="images/101/1-1-2.jpg"></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInRight" data-width="500" data-height="651" data-left="1300" data-top="500"><img src="images/101/1-2.jpg"></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInRight" data-width="600" data-height="781" data-left="1850" data-top="300"><img src="images/101/1-3.jpg"></div>
+                                </div>
+                                <div class="sim-slider-slide">
+                                    <div class="sim-slider-layer" data-effect="fadeInDown" data-width="600" data-height="781" data-left="300" data-top="280">
+                                        <h6>內容一</h6><img src="images/101/2-1.jpg" /></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInUp" data-width="600" data-height="781" data-left="1000" data-top="60">
+                                        <h6>內容二</h6><img src="images/101/2-2.jpg" /></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInDown" data-width="600" data-height="781" data-left="1700" data-top="280">
+                                        <h6>內容三</h6><img src="images/101/2-3.jpg" /></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInDown" data-width="159" data-height="50" data-left="550" data-top="200"></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInUp" data-width="144" data-height="50" data-left="1250" data-top="920"></div>
+                                    <div class="sim-slider-layer" data-effect="fadeInDown" data-width="373" data-height="50" data-left="1800" data-top="200"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="content" data-content="content-3">
+                    <h2>EIP Design<span>內部系統優化改版</span></h2>
+                    <div class="chroma-gallery mygallery">
+                        <img src="images/301/index.jpg" alt="樣式一" data-largesrc="images/301/index.jpg">
+                        <img src="images/301/index1.jpg" alt="樣式二" data-largesrc="images/301/index1.jpg">
+                        <img src="images/301/index2.jpg" alt="樣式三" data-largesrc="images/301/index2.jpg">
+                        <img src="images/301/index3.jpg" alt="樣式四" data-largesrc="images/301/index3.jpg">
+                        <img src="images/301/index201.jpg" alt="" data-largesrc="images/301/index201.jpg">
+                        <img src="images/301/layout1-1-0.jpg" alt="" data-largesrc="images/301/layout1-1-0.jpg">
+                        <img src="images/301/layout1-1-1.jpg" alt="" data-largesrc="images/301/layout1-1-1.jpg">
+                        <img src="images/301/layout1-1-2.jpg" alt="" data-largesrc="images/301/layout1-1-2.jpg">
+                        <img src="images/301/layout1-1-3.jpg" alt="" data-largesrc="images/301/layout1-1-3.jpg">
+                        <img src="images/301/layout1-2-1.jpg" alt="" data-largesrc="images/301/layout1-2-1.jpg">
+                        <img src="images/301/layout1-2-2.jpg" alt="" data-largesrc="images/301/layout1-2-2.jpg">
+                        <img src="images/301/layout1-2-3.jpg" alt="" data-largesrc="images/301/layout1-2-3.jpg">
+                        <img src="images/301/layout1-3-1.jpg" alt="" data-largesrc="images/301/layout1-3-1.jpg">
+                    </div>
+                </div>
+                <div class="content" data-content="content-4">
+                    <h2>影音串流平台<span>Wanin看播平台</span></h2>
+                    <div class="chroma-gallery mygallery">
+                        <img src="images/401/001.jpg" alt="操作狀態-全站" data-largesrc="images/401/001.jpg">
+                        <img src="images/401/002.jpg" alt="操作狀態-播放" data-largesrc="images/401/002.jpg">
+                        <img src="images/401/003.jpg" alt="統一元件" data-largesrc="images/401/003.jpg">
+                        <img src="images/401/1-1-1.jpg" alt="上方列_登入後" data-largesrc="images/401/1-1-1.jpg">
+                        <img src="images/401/3-1.jpg" alt="播放頁" data-largesrc="images/401/3-1.jpg">
+                        <img src="images/401/3-1-6.jpg" alt="支持創作者及團隊" data-largesrc="images/401/3-1-6.jpg">
+                        <img src="images/401/3-1-6-2.jpg" alt="僅開放支持創作者" data-largesrc="images/401/3-1-6-2.jpg">
+                        <img src="images/401/3-1-6-3.jpg" alt="感謝支持視窗" data-largesrc="images/401/3-1-6-3.jpg">
+                        <img src="images/401/3-4.jpg" alt="播放頁_試看結束" data-largesrc="images/401/3-4.jpg">
+                        <img src="images/401/3-4-1.jpg" alt="播放頁_試看結束(已兌換)" data-largesrc="images/401/3-4-1.jpg">
+                        <img src="images/401/3-5.jpg" alt="播放頁(播放結束)" data-largesrc="images/401/3-5.jpg">
+                        <img src="images/401/3-6.jpg" alt="播放頁(無試看)" data-largesrc="images/401/3-6.jpg">
+                    </div>
+                </div>
+                <div class="content" data-content="content-5">
+                    <h2>星城支援<span>扁平化設計</span></h2>
+                    <div class="chroma-gallery mygallery">
+                        <img src="images/501/101.jpg" alt="" data-largesrc="images/501/101.jpg">
+                        <img src="images/501/102.jpg" alt="" data-largesrc="images/501/102.jpg">
+                        <img src="images/501/201.jpg" alt="" data-largesrc="images/501/201.jpg">
+                        <img src="images/501/202.jpg" alt="" data-largesrc="images/501/202.jpg">
+                        <img src="images/501/301.jpg" alt="" data-largesrc="images/501/301.jpg">
+                        <img src="images/501/302.jpg" alt="" data-largesrc="images/501/302.jpg">
+                        <img src="images/501/401.jpg" alt="" data-largesrc="images/501/401.jpg">
+                        <img src="images/501/402.jpg" alt="" data-largesrc="images/501/402.jpg">
+                        <img src="images/501/403.jpg" alt="" data-largesrc="images/501/403.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- /container -->
+    <script src="js/dragdealer.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/dragslideshow.js"></script>
+    <script>
+        (function() {
+            var overlay = document.getElementById('overlay'),
+                overlayClose = overlay.querySelector('button'),
+                header = document.getElementById('header')
+            switchBtnn = header.querySelector('button.slider-switch'),
+                toggleBtnn = function() {
+                    if (slideshow.isFullscreen) {
+                        classie.add(switchBtnn, 'view-maxi');
+                    } else {
+                        classie.remove(switchBtnn, 'view-maxi');
+                    }
+                },
+                toggleCtrls = function() {
+                    if (!slideshow.isContent) {
+                        classie.add(header, 'hide');
+                    }
+                },
+                toggleCompleteCtrls = function() {
+                    if (!slideshow.isContent) {
+                        classie.remove(header, 'hide');
+                    }
+                },
+                slideshow = new DragSlideshow(document.getElementById('slideshow'), {
+                    // toggle between fullscreen and minimized slideshow
+                    onToggle: toggleBtnn,
+                    // toggle the main image and the content view
+                    onToggleContent: toggleCtrls,
+                    // toggle the main image and the content view (triggered after the animation ends)
+                    onToggleContentComplete: toggleCompleteCtrls
+                }),
+                toggleSlideshow = function() {
+                    slideshow.toggle();
+                    toggleBtnn();
+                },
+                closeOverlay = function() {
+                    classie.add(overlay, 'hide');
+                };
+
+            // toggle between fullscreen and small slideshow
+            switchBtnn.addEventListener('click', toggleSlideshow);
+            // close overlay
+            overlayClose.addEventListener('click', closeOverlay);
+        }());
+    </script>
+    <!-- 3d slider
+    <script src="carrousel.js"></script>
+    <script>
+        $(function() {
+            $('.dg-container').carrousel({
+                current: 0,
+                autoplay: true,
+                interval: 3000
+            });
+        });
+    </script> 
+    -->
+    <!-- slider
+    <script type="text/javascript" src="_scripts/responsive-layered-slider.js"></script> 
+    -->
+    <!-- 圖片show -->
+    <script src="js/chromagallery.pkgd.min.js"></script>
+    <script type="text/javascript">
+        // $(document).ready(function() 
+        // {
+        //     $(".mygallery").chromaGallery();
+        // });
+        $(function() {
+            $(".mygallery").chromaGallery({
+                color: '#000',
+                gridMargin: 10,
+                maxColumns: 5,
+                dof: true,
+                screenOpacity: 0.8
+            });
+        });
+    </script>
+</body>
+
+</html>
