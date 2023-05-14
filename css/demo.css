@@ -77,8 +77,9 @@ a:focus {
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 1.5;
     /* margin: 0;
-    line-height: 1.3;
+    
     padding: 1.5em 0 0.25em;
     float: left; */
 }
@@ -209,6 +210,9 @@ a:focus {
 }
 
 @media screen and (max-width: 650px) {
+    header h1 span {
+        display: block;
+    }
     .message {
         display: block;
     }
